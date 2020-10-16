@@ -2,7 +2,7 @@ import java.util.*;
 
 public class programmers_42626 {
     /*
-     * 프로그래머스 42626 완주하지 못한 선수 https://programmers.co.kr/learn/courses/30/lessons/42626?language=java
+     * 프로그래머스 42626 더 맵게 https://programmers.co.kr/learn/courses/30/lessons/42626?language=java
      * 알고리즘: 우선순위큐
      *
      */
@@ -20,7 +20,7 @@ public class programmers_42626 {
                 pq.add(s);
                 answer++;
             }
-            if(pq.peek()<K && answer== scoville.length-1 ) return -1;
+            if(pq.peek()<K && answer== scoville.length-1 ) return -1;//맵게 만들지 못함
             return answer;
         }
     }
